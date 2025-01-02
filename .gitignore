@@ -1,8 +1,8 @@
-./candle/node_modules
-./candle/.cache
-./candle/build
-./candle/dist
-./candle/public/build
-./candle/.mf
-./candle/.env
-./candle/.shopify
+node_modules
+/.cache
+/build
+/dist
+/public/build
+/.mf
+.env
+.shopify
