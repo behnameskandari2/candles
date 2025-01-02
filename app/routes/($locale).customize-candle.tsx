@@ -6,18 +6,17 @@ import { useAside } from '~/components/Aside';
 
 
 export const action = async ({ request, context }: ActionFunctionArgs) => {
+  const apiSecretKey = context.env.OPEN_AI_SECRET;
 
   if (request.method === "POST") {
     // get the form data from the POST
     const formData = await request.formData()
 
-
-
     const openaiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer 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`,
+        'Authorization': `Bearer ${apiSecretKey}`,
       },
       body: JSON.stringify({
         "model": "gpt-3.5-turbo",
