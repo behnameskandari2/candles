@@ -508,3 +508,111 @@ button.reset:hover:not(:has(> *)) {
 .account-logout {
   display: inline-block;
 }
+
+
+
+
+
+/* 
+* Questionnare
+*/
+
+.questionnaire-button {
+  padding: 25px;
+  text-align: center;
+  display: block;
+  margin: 25px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.questionnaire {
+  padding: 25px;
+  /* background: #89af92; */
+  max-width: 720px;
+  margin: 25px auto;
+  box-shadow: 0px 0px 8px 2px #89af923d;
+}
+
+.q-title {
+  margin: 25px 0;
+}
+
+.q-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.q-options .q-option-button {
+  margin: 15px 0;
+  padding: 10px 100px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #000;
+  font-size: 18px;
+  font-weight: 800;
+  width: 100%;
+}
+
+.q-options .q-option-button:hover,
+.q-option-button.active {
+  background: #fff;
+  color: #89af92;
+  cursor: pointer;
+  border: 1px solid #89af92;
+}
+
+.q-controll {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  border-top: solid 1px #fff;
+}
+
+.q-controll-button {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.q-controll-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.q-controll-button:disabled {
+  background: rgb(165, 165, 165);
+  color: #000;
+  cursor: default;
+}
+
+.stepper-container {
+  padding: 5px 0;
+  display: flex;
+  gap: 10px
+}
+
+.stepper-container .stepper {
+  background: #c2d0c5;
+  height: 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.stepper-container .stepper.active_stepper {
+  background: #89af92
+}
+
+.has-answer {
+  cursor: pointer;
+}
+
+.q-text-input{
+  width: 100%;
+}
