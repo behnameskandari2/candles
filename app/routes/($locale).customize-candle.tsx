@@ -11,14 +11,13 @@ export const action = async ({ request, context }: ActionFunctionArgs) => {
     // get the form data from the POST
     const formData = await request.formData()
 
-    const tok = "sk-proj-_7HSphprHg2EwW0yfWhzsBWnhhkA_C0Huuwr_AENy8hQUbD6Gb6ToyzlcGX67Bq2qg_"
 
 
     const openaiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${tok}16Hc7uiT3BlbkFJH0JS1ZgtgJjrgC6XErOVcxOsMrl0GCAA4TUOqexnMKS-kMmF9NuXtpGFzVS_fEQLekHPWpatYA`,
+        'Authorization': `Bearer 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`,
       },
       body: JSON.stringify({
         "model": "gpt-3.5-turbo",
